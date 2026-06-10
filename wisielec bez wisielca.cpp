@@ -1,6 +1,6 @@
 #include <iostream>
 using namespace std;
-int t[10],n;//t[12],t[6];
+int t[101],n;//t[12],t[6];
 int main(){
 cout << "witaj w grze wisielec" <<endl;
 cout<< "|zasady gry -- jedna osoba literuje slowo do odgadniecia|" <<endl;
@@ -19,6 +19,13 @@ cin>> n;
         cin>>t[i];
     }
 for(int i=0;i<n;i++){
+    for(int i=20;i<38;i++){
+        for(int j=20;j<29){
+            cin>>(t[i][j])=0;
+        }
+
+    }
+
         if(t[i]==2){
             cout << "a";
         }
@@ -98,11 +105,5 @@ for(int i=0;i<n;i++){
             cout<< "z";
         }
     }
-    //for(int y=0;z<12;i++){
-        //for(int z=0;z<6;i++){
-           // if(t[y]==0){
-                //cout << "|"
-          //  }
-      //  }
     }
-//}
+
